@@ -1,1 +1,0 @@
-El .exe tiene que estar respecto a la carpeta assets donde está, en otras palabras, la carpeta assets debe de estar 2 carpetas más atrás, en: ../../assets.
