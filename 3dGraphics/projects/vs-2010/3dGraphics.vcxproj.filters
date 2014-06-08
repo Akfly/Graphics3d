@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\code\main.cpp" />
+    <ClCompile Include="..\..\code\View.cpp" />
+    <ClCompile Include="..\..\code\cpp-toolkit\sources\Input_Stream.cpp">
+      <Filter>cpp-toolkit\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\cpp-toolkit\sources\Output_Stream.cpp">
+      <Filter>cpp-toolkit\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\cpp-toolkit\sources\String.cpp">
+      <Filter>cpp-toolkit\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\objloader\list.cpp">
+      <Filter>objloader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\objloader\obj_parser.cpp">
+      <Filter>objloader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\objloader\objLoader.cpp">
+      <Filter>objloader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\objloader\string_extra.cpp">
+      <Filter>objloader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\glfont_cpp\glfont.cc">
+      <Filter>glfont</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Application.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\Pixel_Buffer.hpp" />
+    <ClInclude Include="..\..\code\Pixel_Buffer_Rgb565.hpp" />
+    <ClInclude Include="..\..\code\Pixel_Buffer_Rgba8888.hpp" />
+    <ClInclude Include="..\..\code\Rasterizer.hpp" />
+    <ClInclude Include="..\..\code\View.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Algorithms.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Array.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Char.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Cloneable.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Coordinates.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Decoder.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Encoder.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\File_Reader.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\File_Writer.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Input_Stream.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\macros.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Matrix.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Memory_Reader.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Memory_Writer.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Non_Copyable.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Obfuscation_Decoder.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Obfuscation_Encoder.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Object_Pool.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Output_Stream.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Point.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Pointer.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Projection.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Random_Generator.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Reader.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Rotation.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Scaling.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Seekable.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Shared_Ptr.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Stream.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\String.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Transformation.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Translation.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\types.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Vector.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Void_Decoder.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Void_Encoder.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Writer.hpp">
+      <Filter>cpp-toolkit\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Mesh.hpp" />
+    <ClInclude Include="..\..\code\objloader\list.h">
+      <Filter>objloader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\objloader\obj_parser.h">
+      <Filter>objloader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\objloader\objLoader.h">
+      <Filter>objloader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\objloader\string_extra.h">
+      <Filter>objloader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\glfont_cpp\glfont.h">
+      <Filter>glfont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Camera.hpp" />
+    <ClInclude Include="..\..\code\Application.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="cpp-toolkit">
+      <UniqueIdentifier>{d286a150-0e7d-4bed-88ae-3469ab86876c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp-toolkit\headers">
+      <UniqueIdentifier>{36ee0ec0-040f-465b-b860-4f823b381093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp-toolkit\sources">
+      <UniqueIdentifier>{20a1d2f0-59d9-4d5a-876f-dac2b69caca6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="objloader">
+      <UniqueIdentifier>{59976b1c-7fa3-4759-bfa9-8d83d649ed7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glfont">
+      <UniqueIdentifier>{5f3f7351-520d-4663-8906-d5fdff60f7e4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

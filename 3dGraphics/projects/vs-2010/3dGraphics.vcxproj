@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{636EB426-ECAF-4E3F-ACE9-9DF1106AE01D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PixelBufferWindow</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\..\..\.libraries\sfml-2.1-vs-2010\include;$(SolutionDir)\..\..\..\.libraries\gl\headers</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\..\..\..\.libraries\sfml-2.1-vs-2010\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-main-d.lib;sfml-system-s-d.lib;sfml-window-s-d.lib;sfml-graphics-s-d.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\..\..\.libraries\sfml-2.1-vs-2010\include;$(SolutionDir)\..\..\..\.libraries\gl\headers</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)\..\..\..\.libraries\sfml-2.1-vs-2010\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-main.lib;sfml-system-s.lib;sfml-window-s.lib;sfml-graphics-s.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\Application.cpp" />
+    <ClCompile Include="..\..\code\cpp-toolkit\sources\Input_Stream.cpp" />
+    <ClCompile Include="..\..\code\cpp-toolkit\sources\Output_Stream.cpp" />
+    <ClCompile Include="..\..\code\cpp-toolkit\sources\String.cpp" />
+    <ClCompile Include="..\..\code\glfont_cpp\glfont.cc" />
+    <ClCompile Include="..\..\code\main.cpp" />
+    <ClCompile Include="..\..\code\objloader\list.cpp" />
+    <ClCompile Include="..\..\code\objloader\objLoader.cpp" />
+    <ClCompile Include="..\..\code\objloader\obj_parser.cpp" />
+    <ClCompile Include="..\..\code\objloader\string_extra.cpp" />
+    <ClCompile Include="..\..\code\View.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\Application.hpp" />
+    <ClInclude Include="..\..\code\Camera.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Algorithms.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Array.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Char.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Cloneable.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Coordinates.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Decoder.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Encoder.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\File_Reader.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\File_Writer.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Input_Stream.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\macros.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Matrix.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Memory_Reader.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Memory_Writer.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Non_Copyable.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Obfuscation_Decoder.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Obfuscation_Encoder.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Object_Pool.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Output_Stream.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Point.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Pointer.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Projection.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Random_Generator.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Reader.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Rotation.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Scaling.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Seekable.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Shared_Ptr.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Stream.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\String.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Transformation.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Translation.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\types.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Vector.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Void_Decoder.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Void_Encoder.hpp" />
+    <ClInclude Include="..\..\code\cpp-toolkit\headers\Writer.hpp" />
+    <ClInclude Include="..\..\code\glfont_cpp\glfont.h" />
+    <ClInclude Include="..\..\code\Mesh.hpp" />
+    <ClInclude Include="..\..\code\objloader\list.h" />
+    <ClInclude Include="..\..\code\objloader\objLoader.h" />
+    <ClInclude Include="..\..\code\objloader\obj_parser.h" />
+    <ClInclude Include="..\..\code\objloader\string_extra.h" />
+    <ClInclude Include="..\..\code\Pixel_Buffer.hpp" />
+    <ClInclude Include="..\..\code\Pixel_Buffer_Rgb565.hpp" />
+    <ClInclude Include="..\..\code\Pixel_Buffer_Rgba8888.hpp" />
+    <ClInclude Include="..\..\code\Rasterizer.hpp" />
+    <ClInclude Include="..\..\code\View.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
